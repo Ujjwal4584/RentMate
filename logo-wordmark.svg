@@ -1,0 +1,10 @@
+<svg viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon mark -->
+  <circle cx="40" cy="40" r="38" fill="#ffffff" stroke="#C8102E" stroke-width="2.5"/>
+  <path d="M40 16 L64 36 L64 36 L57 36 L57 58 L23 58 L23 36 L16 36 Z" fill="#C8102E"/>
+  <circle cx="40" cy="45" r="5" fill="#ffffff"/>
+  <rect x="37.5" y="45" width="5" height="10" fill="#ffffff"/>
+
+  <!-- Wordmark: "Rent" always red, "Mate" uses currentColor so it adapts to light/dark backgrounds -->
+  <text x="92" y="50" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800" fill="#C8102E">Rent<tspan fill="currentColor">Mate</tspan></text>
+</svg>

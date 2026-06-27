@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login / Sign up — RentMate</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/svg+xml" href="../assets/logo-icon.svg">
+</head>
+<body>
+
+<header class="site">
+  <nav class="wrap nav">
+    <a href="../index.html" class="logo">
+  <img src="../assets/logo-icon.svg" alt="RentMate logo" style="width:28px;height:28px;">
+  <span>Rent</span>Mate
+</a>
+    <button class="hamburger">☰</button>
+    <ul class="nav-links">
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="hostels.html">Hostels</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="bikes.html">Bikes</a></li>
+      <li><a href="cycles.html">Cycles</a></li>
+      <li><a href="cars.html">Cars</a></li>
+      <li><a href="wallet.html">Wallet</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+    <div class="nav-actions" id="authSlot"></div>
+  </nav>
+</header>
+
+<section class="block">
+  <div class="wrap">
+    <div class="form-card">
+      <h2 id="formTitle">Log in to RentMate</h2>
+      <p class="sub">Book rooms, hostels, hotels, bikes, cycles &amp; cars in seconds.</p>
+
+      <form id="authForm">
+        <div class="form-group" id="nameField" style="display:none;">
+          <label>Full name</label>
+          <input type="text" id="authName" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="authEmail" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn block" id="authSubmitBtn">Log in</button>
+      </form>
+
+      <div class="divider-text">or continue with</div>
+      <button class="btn outline block" type="button" onclick="document.getElementById('authForm').requestSubmit()">📱 Continue with Google (demo)</button>
+
+      <div class="switch-link">
+        <span id="switchText">New to RentMate?</span>
+        <a href="#" id="switchLink">Sign up</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-bottom">© 2026 RentMate</div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script>
+  // toggle between Login / Sign up just by showing the name field — demo only
+  let isSignup = false;
+  document.getElementById('switchLink').addEventListener('click', (e)=>{
+    e.preventDefault();
+    isSignup = !isSignup;
+    document.getElementById('nameField').style.display = isSignup ? 'block' : 'none';
+    document.getElementById('formTitle').textContent = isSignup ? 'Create your RentMate account' : 'Log in to RentMate';
+    document.getElementById('authSubmitBtn').textContent = isSignup ? 'Sign up' : 'Log in';
+    document.getElementById('switchText').textContent = isSignup ? 'Already have an account?' : 'New to RentMate?';
+    document.getElementById('switchLink').textContent = isSignup ? 'Log in' : 'Sign up';
+  });
+</script>
+</body>
+</html>

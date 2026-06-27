@@ -1,0 +1,12 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- RentMate icon mark: a house roof that opens into a key -->
+  <circle cx="50" cy="50" r="48" fill="#ffffff" stroke="#C8102E" stroke-width="3"/>
+
+  <!-- Roof / house shape -->
+  <path d="M50 22 L78 44 L78 44 L70 44 L70 70 L30 70 L30 44 L22 44 Z"
+        fill="#C8102E"/>
+
+  <!-- Door cut-out shaped like a key hole, tying "home" to "rent/key" -->
+  <circle cx="50" cy="56" r="6.5" fill="#ffffff"/>
+  <rect x="47" y="56" width="6" height="13" fill="#ffffff"/>
+</svg>

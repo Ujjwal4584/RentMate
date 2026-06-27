@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RentMate Wallet</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/svg+xml" href="../assets/logo-icon.svg">
+</head>
+<body>
+
+<header class="site">
+  <nav class="wrap nav">
+    <a href="../index.html" class="logo">
+  <img src="../assets/logo-icon.svg" alt="RentMate logo" style="width:28px;height:28px;">
+  <span>Rent</span>Mate
+</a>
+    <button class="hamburger">☰</button>
+    <ul class="nav-links">
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="hostels.html">Hostels</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="bikes.html">Bikes</a></li>
+      <li><a href="cycles.html">Cycles</a></li>
+      <li><a href="cars.html">Cars</a></li>
+      <li><a href="wallet.html" class="active">Wallet</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+    <div class="nav-actions" id="authSlot"></div>
+  </nav>
+</header>
+
+<div class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">Home</a> / RentMate Wallet</div>
+    <h1>👛 RentMate Wallet</h1>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap" style="max-width:600px;">
+    <div class="wallet-box">
+      <div class="hint" style="color:#ffe5e9;">Available balance</div>
+      <div class="amt" id="walletBalance">₹0</div>
+      <div class="wallet-actions">
+        <button id="addMoneyBtn">+ Add ₹200 (demo)</button>
+      </div>
+    </div>
+
+    <div class="section-head"><h2>Transaction <strong>history</strong></h2></div>
+    <div id="txnList" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;"></div>
+
+    <div class="feature" style="margin-top:20px;">
+      <span class="ic">💡</span>
+      <div>
+        <h4>Why use RentMate Wallet?</h4>
+        <p>Skip entering payment details every time, get instant refunds on cancellation, and earn cashback on select bookings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-bottom">© 2026 RentMate</div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

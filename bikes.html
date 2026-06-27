@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bikes — RentMate</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/svg+xml" href="../assets/logo-icon.svg">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>📍 Serving students & travellers across India</span>
+    <span><a href="help.html">Need help?</a> &nbsp;|&nbsp; <a href="about.html">About RentMate</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <nav class="wrap nav">
+    <a href="../index.html" class="logo">
+  <img src="../assets/logo-icon.svg" alt="RentMate logo" style="width:28px;height:28px;">
+  <span>Rent</span>Mate
+</a>
+    <button class="hamburger">☰</button>
+    <ul class="nav-links">
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="hostels.html">Hostels</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="bikes.html" class="active">Bikes</a></li>
+      <li><a href="cycles.html">Cycles</a></li>
+      <li><a href="cars.html">Cars</a></li>
+      <li><a href="wallet.html">Wallet</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+    <div class="nav-actions" id="authSlot"></div>
+  </nav>
+</header>
+
+<div class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">Home</a> / Bikes</div>
+    <h1>🏍️ Bikes</h1>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap layout-2col">
+
+    <aside class="filter-box">
+      <h4>Location</h4>
+      <input type="text" id="filterLocation" placeholder="Search area or college">
+
+      <h4>Max price (per day)</h4>
+      <input type="range" id="filterPrice" min="100" max="1500" step="50" value="1500">
+      <div class="hint">Up to <span id="filterPriceLabel">₹1500</span></div>
+
+      <h4>Minimum rating</h4>
+      <label><input type="checkbox" class="rating-filter" value="4.5"> 4.5 & above</label>
+      <label><input type="checkbox" class="rating-filter" value="4"> 4.0 & above</label>
+      <label><input type="checkbox" class="rating-filter" value="3"> 3.0 & above</label>
+    </aside>
+
+    <div>
+      <div class="section-head"><h2>Showing <strong>bikes</strong></h2></div>
+      <div class="grid cols-3" id="listingGrid">
+
+        <a class="card" href="listing.html?cat=bikes&id=b1" data-price="250" data-rating="4.5" data-location="city college campus">
+          <div class="thumb">🏍️</div>
+          <div class="body">
+            <h3>Honda Activa - QuickRide</h3>
+            <div class="meta">📍 Near City College</div>
+            <div class="rating">⭐ 4.5 (88 reviews)</div>
+            <div class="price">₹250 <span>/day</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="listing.html?cat=bikes&id=b2" data-price="350" data-rating="4.6" data-location="station road">
+          <div class="thumb">🏍️</div>
+          <div class="body">
+            <h3>Bajaj Pulsar - CampusWheels</h3>
+            <div class="meta">📍 Station Road</div>
+            <div class="rating">⭐ 4.6 (64 reviews)</div>
+            <div class="price">₹350 <span>/day</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="listing.html?cat=bikes&id=b3" data-price="200" data-rating="4.3" data-location="sector 12">
+          <div class="thumb">🏍️</div>
+          <div class="body">
+            <h3>TVS Jupiter - QuickRide</h3>
+            <div class="meta">📍 Sector 12</div>
+            <div class="rating">⭐ 4.3 (47 reviews)</div>
+            <div class="price">₹200 <span>/day</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="listing.html?cat=bikes&id=b4" data-price="450" data-rating="4.7" data-location="city center">
+          <div class="thumb">🏍️</div>
+          <div class="body">
+            <h3>Royal Enfield Classic - CityDrive</h3>
+            <div class="meta">📍 City Center</div>
+            <div class="rating">⭐ 4.7 (102 reviews)</div>
+            <div class="price">₹450 <span>/day</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="listing.html?cat=bikes&id=b5" data-price="180" data-rating="4.1" data-location="university gate">
+          <div class="thumb">🏍️</div>
+          <div class="body">
+            <h3>Hero Splendor - QuickRide</h3>
+            <div class="meta">📍 Opp. University Gate</div>
+            <div class="rating">⭐ 4.1 (39 reviews)</div>
+            <div class="price">₹180 <span>/day</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="listing.html?cat=bikes&id=b6" data-price="300" data-rating="4.4" data-location="market road">
+          <div class="thumb">🏍️</div>
+          <div class="body">
+            <h3>Yamaha FZ - CampusWheels</h3>
+            <div class="meta">📍 Market Road</div>
+            <div class="rating">⭐ 4.4 (55 reviews)</div>
+            <div class="price">₹300 <span>/day</span></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="foot-logo">Rent<span>Mate</span></div>
+        <p>RentMate is a student-built rental platform — rooms, hostels, hotels, bikes, cycles & cars at one place.</p>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="hostels.html">Hostels</a></li>
+          <li><a href="hotels.html">Hotels</a></li>
+          <li><a href="bikes.html">Bikes</a></li>
+          <li><a href="cycles.html">Cycles</a></li>
+          <li><a href="cars.html">Cars</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login / Sign up</a></li>
+          <li><a href="account.html">My Bookings</a></li>
+          <li><a href="wallet.html">RentMate Wallet</a></li>
+          <li><a href="help.html">Help Center</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="help.html">Contact / Support</a></li>
+          <li><a href="share.html">Share this site</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 RentMate</div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

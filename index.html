@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RentMate — Rent Rooms, Hostels, Hotels, Bikes, Cycles & Cars</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>📍 Serving students & travellers across India</span>
+    <span><a href="pages/help.html">Need help?</a> &nbsp;|&nbsp; <a href="pages/about.html">About RentMate</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <nav class="wrap nav">
+    <a href="index.html" class="logo">
+  <img src="assets/logo-icon.svg" alt="RentMate logo" style="width:28px;height:28px;">
+  <span>Rent</span>Mate
+</a>
+    <button class="hamburger">☰</button>
+    <ul class="nav-links">
+      <li><a href="pages/rooms.html">Rooms</a></li>
+      <li><a href="pages/hostels.html">Hostels</a></li>
+      <li><a href="pages/hotels.html">Hotels</a></li>
+      <li><a href="pages/bikes.html">Bikes</a></li>
+      <li><a href="pages/cycles.html">Cycles</a></li>
+      <li><a href="pages/cars.html">Cars</a></li>
+      <li><a href="pages/wallet.html">Wallet</a></li>
+      <li><a href="pages/help.html">Help</a></li>
+    </ul>
+    <div class="nav-actions" id="authSlot"></div>
+  </nav>
+</header>
+
+<!-- HERO + SEARCH -->
+<section class="hero">
+  <div class="wrap">
+    <h1>One app for every kind of rental.</h1>
+    <p class="sub">Rooms, hostels, hotels, bikes, cycles &amp; cars — all in one place, made for students &amp; everyday people.</p>
+
+    <div class="tabs">
+      <button class="active" data-cat="rooms">🛏️ Rooms</button>
+      <button data-cat="hostels">🏢 Hostels</button>
+      <button data-cat="hotels">🏨 Hotels</button>
+      <button data-cat="bikes">🏍️ Bikes</button>
+      <button data-cat="cycles">🚲 Cycles</button>
+      <button data-cat="cars">🚗 Cars</button>
+    </div>
+
+    <form class="search-card" id="searchForm">
+      <input type="hidden" id="searchCategory" value="rooms">
+      <div class="field">
+        <label>Location</label>
+        <input type="text" id="searchLocation" placeholder="Enter city or college area">
+      </div>
+      <div class="field">
+        <label>From</label>
+        <input type="date">
+      </div>
+      <div class="field">
+        <label>To</label>
+        <input type="date">
+      </div>
+      <div class="field go">
+        <button type="submit" class="btn block">🔍 Search</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head"><h2>Browse by <strong>category</strong></h2></div>
+    <div class="grid cols-4">
+      <a class="cat-tile" href="pages/rooms.html"><span class="ic">🛏️</span>Rooms</a>
+      <a class="cat-tile" href="pages/hostels.html"><span class="ic">🏢</span>Hostels</a>
+      <a class="cat-tile" href="pages/hotels.html"><span class="ic">🏨</span>Hotels</a>
+      <a class="cat-tile" href="pages/bikes.html"><span class="ic">🏍️</span>Bikes</a>
+      <a class="cat-tile" href="pages/cycles.html"><span class="ic">🚲</span>Cycles</a>
+      <a class="cat-tile" href="pages/cars.html"><span class="ic">🚗</span>Cars</a>
+      <a class="cat-tile" href="pages/wallet.html"><span class="ic">👛</span>RentMate Wallet</a>
+      <a class="cat-tile" href="pages/help.html"><span class="ic">🆘</span>Need Help</a>
+    </div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section class="block alt">
+  <div class="wrap">
+    <div class="section-head"><h2>Current <strong>offers</strong></h2></div>
+    <div class="grid cols-3">
+      <div class="offer-card">
+        <strong>Flat 20% off</strong>
+        <span>On your first room or hostel booking</span>
+        <span class="code">RENT20</span>
+      </div>
+      <div class="offer-card alt">
+        <strong>₹100 cashback</strong>
+        <span>Pay using RentMate Wallet on any bike/cycle ride</span>
+        <span class="code">WALLET100</span>
+      </div>
+      <div class="offer-card">
+        <strong>Weekend car deals</strong>
+        <span>Up to ₹500 off on self-drive cars, Fri–Sun</span>
+        <span class="code">WEEKEND500</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOP HOSTELS -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head"><h2>Top <strong>hostels</strong> near campuses</h2><a href="pages/hostels.html">View all →</a></div>
+    <div class="grid cols-4">
+      <div class="card">
+        <div class="thumb">🏢</div>
+        <div class="body">
+          <h3>Sunrise Boys Hostel</h3>
+          <div class="meta">📍 Near City College</div>
+          <div class="rating">⭐ 4.5 (120 reviews)</div>
+          <div class="price">₹4,500 <span>/month</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb">🏢</div>
+        <div class="body">
+          <h3>Greenview Girls PG</h3>
+          <div class="meta">📍 Sector 12, Near Metro</div>
+          <div class="rating">⭐ 4.7 (98 reviews)</div>
+          <div class="price">₹5,200 <span>/month</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb">🏢</div>
+        <div class="body">
+          <h3>Campus Corner Hostel</h3>
+          <div class="meta">📍 Opp. University Gate</div>
+          <div class="rating">⭐ 4.3 (76 reviews)</div>
+          <div class="price">₹3,900 <span>/month</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb">🏢</div>
+        <div class="body">
+          <h3>Unity Co-living Hostel</h3>
+          <div class="meta">📍 Station Road</div>
+          <div class="rating">⭐ 4.4 (54 reviews)</div>
+          <div class="price">₹4,800 <span>/month</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOP HOTELS / ROOMS -->
+<section class="block alt">
+  <div class="wrap">
+    <div class="section-head"><h2>Top <strong>hotels &amp; rooms</strong></h2><a href="pages/hotels.html">View all →</a></div>
+    <div class="grid cols-4">
+      <div class="card">
+        <div class="thumb">🏨</div>
+        <div class="body">
+          <h3>Hotel Blue Orchid</h3>
+          <div class="meta">📍 Main Market Road</div>
+          <div class="rating">⭐ 4.6 (210 reviews)</div>
+          <div class="price">₹1,800 <span>/night</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb">🏨</div>
+        <div class="body">
+          <h3>The Wanderlust Inn</h3>
+          <div class="meta">📍 Near Railway Station</div>
+          <div class="rating">⭐ 4.2 (88 reviews)</div>
+          <div class="price">₹1,200 <span>/night</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb">🛏️</div>
+        <div class="body">
+          <h3>Single Room - Sharma Niwas</h3>
+          <div class="meta">📍 Behind College Road</div>
+          <div class="rating">⭐ 4.1 (40 reviews)</div>
+          <div class="price">₹3,200 <span>/month</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb">🏨</div>
+        <div class="body">
+          <h3>Hotel Grand Stay</h3>
+          <div class="meta">📍 City Center</div>
+          <div class="rating">⭐ 4.8 (300 reviews)</div>
+          <div class="price">₹2,500 <span>/night</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOP AGENCIES FOR BIKE/CAR -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head"><h2>Most used <strong>bike &amp; car agencies</strong></h2></div>
+    <div class="grid cols-4">
+      <div class="card">
+        <div class="thumb">🏍️</div>
+        <div class="body">
+          <h3>QuickRide Bikes</h3>
+          <div class="meta">200+ bikes available</div>
+          <div class="rating">⭐ 4.5</div>
+          <div class="price">₹250 <span>/day</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb">🚗</div>
+        <div class="body">
+          <h3>CityDrive Self-Drive Cars</h3>
+          <div class="meta">80+ cars available</div>
+          <div class="rating">⭐ 4.6</div>
+          <div class="price">₹1,200 <span>/day</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb">🚲</div>
+        <div class="body">
+          <h3>EcoCycle Rentals</h3>
+          <div class="meta">150+ cycles available</div>
+          <div class="rating">⭐ 4.4</div>
+          <div class="price">₹40 <span>/hour</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb">🏍️</div>
+        <div class="body">
+          <h3>CampusWheels Scooters</h3>
+          <div class="meta">100+ scooters available</div>
+          <div class="rating">⭐ 4.3</div>
+          <div class="price">₹200 <span>/day</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE RENTMATE -->
+<section class="block alt">
+  <div class="wrap">
+    <div class="section-head"><h2>Why choose <strong>RentMate?</strong></h2></div>
+    <div class="grid cols-4">
+      <div class="feature"><span class="ic">✅</span><div><h4>Verified listings</h4><p>Every room, hostel, hotel & vehicle is checked before going live.</p></div></div>
+      <div class="feature"><span class="ic">💸</span><div><h4>Best price guarantee</h4><p>No hidden charges. Pay only what you see.</p></div></div>
+      <div class="feature"><span class="ic">⚡</span><div><h4>Instant booking</h4><p>Book in a few clicks, no long calls or waiting.</p></div></div>
+      <div class="feature"><span class="ic">↩️</span><div><h4>Easy cancellation</h4><p>Cancel anytime before check-in, refund to your wallet.</p></div></div>
+      <div class="feature"><span class="ic">📍</span><div><h4>Live location &amp; map</h4><p>See exact pickup or stay location before you book.</p></div></div>
+      <div class="feature"><span class="ic">🪪</span><div><h4>License verification</h4><p>Safe rides with verified license check for bikes & cars.</p></div></div>
+      <div class="feature"><span class="ic">👛</span><div><h4>RentMate Wallet</h4><p>Faster checkout & cashback on every booking.</p></div></div>
+      <div class="feature"><span class="ic">🎓</span><div><h4>Made for students</h4><p>Student-friendly prices near every campus.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- APP DOWNLOAD -->
+<section class="block">
+  <div class="wrap">
+    <div class="app-band">
+      <div>
+        <h3>📱 Get the RentMate App</h3>
+        <p>Download now and get flat ₹150 off on your first booking, app-only deals & faster rebooking.</p>
+      </div>
+      <div class="badges">
+        <span class="store-badge">▶ Get it on Google Play</span>
+        <span class="store-badge"> App Store</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="foot-logo">Rent<span>Mate</span></div>
+        <p>RentMate is a student-built rental platform to find rooms, hostels, hotels, bikes, cycles & cars — all at one place. College mini-project by Team RentMate.</p>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="pages/rooms.html">Rooms</a></li>
+          <li><a href="pages/hostels.html">Hostels</a></li>
+          <li><a href="pages/hotels.html">Hotels</a></li>
+          <li><a href="pages/bikes.html">Bikes</a></li>
+          <li><a href="pages/cycles.html">Cycles</a></li>
+          <li><a href="pages/cars.html">Cars</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li><a href="pages/login.html">Login / Sign up</a></li>
+          <li><a href="pages/account.html">My Bookings</a></li>
+          <li><a href="pages/wallet.html">RentMate Wallet</a></li>
+          <li><a href="pages/help.html">Help Center</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/about.html#features">Features</a></li>
+          <li><a href="pages/help.html">Contact / Support</a></li>
+          <li><a href="pages/share.html">Share this site</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 RentMate </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

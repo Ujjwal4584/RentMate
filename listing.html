@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listing Details — RentMate</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/svg+xml" href="../assets/logo-icon.svg">
+</head>
+<body>
+
+<header class="site">
+  <nav class="wrap nav">
+    <a href="../index.html" class="logo">
+  <img src="../assets/logo-icon.svg" alt="RentMate logo" style="width:28px;height:28px;">
+  <span>Rent</span>Mate
+</a>
+    <button class="hamburger">☰</button>
+    <ul class="nav-links">
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="hostels.html">Hostels</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="bikes.html">Bikes</a></li>
+      <li><a href="cycles.html">Cycles</a></li>
+      <li><a href="cars.html">Cars</a></li>
+      <li><a href="wallet.html">Wallet</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+    <div class="nav-actions" id="authSlot"></div>
+  </nav>
+</header>
+
+<div class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">Home</a> / <a id="crumbCat" href="rooms.html">Category</a> / Details</div>
+    <h1 id="listingTitle">Loading...</h1>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap">
+    <div class="detail-top">
+      <div>
+        <div class="detail-gallery" id="listingThumb">🏠</div>
+
+        <div class="detail-info" style="margin-top:16px;">
+          <div class="meta-row">
+            <span id="listingLocation">📍 Location</span>
+            <span id="listingRating">⭐ Rating</span>
+            <span class="tag">✅ Verified Listing</span>
+          </div>
+          <p id="listingDesc">Description loading...</p>
+
+          <h4>Amenities / Features</h4>
+          <div class="amenities" id="listingAmenities"></div>
+
+          <h4>License verification</h4>
+          <p class="hint" id="listingLicense"></p>
+
+          <h4>Pickup / Stay location</h4>
+          <div class="map-box" data-lat="28.6139" data-lng="77.2090" data-label="RentMate Listing"></div>
+
+          <h4 style="margin-top:24px;">Ratings &amp; Reviews</h4>
+          <div id="reviewsBlock"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="booking-box">
+          <h3 id="bookingHeading">Book this</h3>
+          <form id="bookingForm" data-price="0" data-unit="night" data-title="" data-category="">
+            <div class="form-row">
+              <div class="form-group">
+                <label id="fromLabel">From</label>
+                <input type="date" id="bookFrom" required>
+              </div>
+              <div class="form-group">
+                <label id="toLabel">To</label>
+                <input type="date" id="bookTo" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Pay using</label>
+              <label style="font-weight:400;"><input type="radio" name="payMethod" value="wallet" checked> RentMate Wallet</label><br>
+              <label style="font-weight:400;"><input type="radio" name="payMethod" value="upi"> UPI / Card (pay on arrival)</label>
+            </div>
+
+            <div class="total-row">
+              <span id="bookUnits">0 unit(s)</span>
+              <span id="bookTotal">₹0</span>
+            </div>
+
+            <button type="submit" class="btn block">Confirm Booking</button>
+            <div class="verify-badge">🛡️ Safe &amp; verified — license/ID check at pickup</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="foot-logo">Rent<span>Mate</span></div>
+        <p>RentMate is a student-built rental platform — rooms, hostels, hotels, bikes, cycles & cars at one place.</p>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="hostels.html">Hostels</a></li>
+          <li><a href="hotels.html">Hotels</a></li>
+          <li><a href="bikes.html">Bikes</a></li>
+          <li><a href="cycles.html">Cycles</a></li>
+          <li><a href="cars.html">Cars</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login / Sign up</a></li>
+          <li><a href="account.html">My Bookings</a></li>
+          <li><a href="wallet.html">RentMate Wallet</a></li>
+          <li><a href="help.html">Help Center</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="help.html">Contact / Support</a></li>
+          <li><a href="share.html">Share this site</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 RentMate</div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script src="listing-data.js"></script>
+</body>
+</html>

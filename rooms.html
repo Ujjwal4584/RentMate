@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooms for Rent — RentMate</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/svg+xml" href="../assets/logo-icon.svg">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>📍 Serving students & travellers across India</span>
+    <span><a href="help.html">Need help?</a> &nbsp;|&nbsp; <a href="about.html">About RentMate</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <nav class="wrap nav">
+    <a href="../index.html" class="logo">
+  <img src="../assets/logo-icon.svg" alt="RentMate logo" style="width:28px;height:28px;">
+  <span>Rent</span>Mate
+</a>
+    <button class="hamburger">☰</button>
+    <ul class="nav-links">
+      <li><a href="rooms.html" class="active">Rooms</a></li>
+      <li><a href="hostels.html">Hostels</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="bikes.html">Bikes</a></li>
+      <li><a href="cycles.html">Cycles</a></li>
+      <li><a href="cars.html">Cars</a></li>
+      <li><a href="wallet.html">Wallet</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+    <div class="nav-actions" id="authSlot"></div>
+  </nav>
+</header>
+
+<div class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">Home</a> / Rooms</div>
+    <h1>🛏️ Rooms for Rent</h1>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap layout-2col">
+
+    <aside class="filter-box">
+      <h4>Location</h4>
+      <input type="text" id="filterLocation" placeholder="Search area or college">
+
+      <h4>Max price (per month)</h4>
+      <input type="range" id="filterPrice" min="1000" max="10000" step="500" value="10000">
+      <div class="hint">Up to <span id="filterPriceLabel">₹10000</span></div>
+
+      <h4>Minimum rating</h4>
+      <label><input type="checkbox" class="rating-filter" value="4.5"> 4.5 & above</label>
+      <label><input type="checkbox" class="rating-filter" value="4"> 4.0 & above</label>
+      <label><input type="checkbox" class="rating-filter" value="3"> 3.0 & above</label>
+    </aside>
+
+    <div>
+      <div class="section-head"><h2>Showing <strong>rooms</strong></h2></div>
+      <div class="grid cols-3" id="listingGrid">
+
+        <a class="card" href="listing.html?cat=rooms&id=r1" data-price="3200" data-rating="4.1" data-location="college road city center">
+          <div class="thumb">🛏️</div>
+          <div class="body">
+            <h3>Single Room - Sharma Niwas</h3>
+            <div class="meta">📍 Behind College Road</div>
+            <div class="rating">⭐ 4.1 (40 reviews)</div>
+            <div class="price">₹3,200 <span>/month</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="listing.html?cat=rooms&id=r2" data-price="4000" data-rating="4.4" data-location="sector 12 metro">
+          <div class="thumb">🛏️</div>
+          <div class="body">
+            <h3>Shared Room - Verma House</h3>
+            <div class="meta">📍 Sector 12, Near Metro</div>
+            <div class="rating">⭐ 4.4 (62 reviews)</div>
+            <div class="price">₹4,000 <span>/month</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="listing.html?cat=rooms&id=r3" data-price="5500" data-rating="4.6" data-location="university gate">
+          <div class="thumb">🛏️</div>
+          <div class="body">
+            <h3>Private Room - Lakeview Residency</h3>
+            <div class="meta">📍 Opp. University Gate</div>
+            <div class="rating">⭐ 4.6 (95 reviews)</div>
+            <div class="price">₹5,500 <span>/month</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="listing.html?cat=rooms&id=r4" data-price="2800" data-rating="3.9" data-location="station road">
+          <div class="thumb">🛏️</div>
+          <div class="body">
+            <h3>Budget Room - Patel Stay</h3>
+            <div class="meta">📍 Station Road</div>
+            <div class="rating">⭐ 3.9 (21 reviews)</div>
+            <div class="price">₹2,800 <span>/month</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="listing.html?cat=rooms&id=r5" data-price="6200" data-rating="4.8" data-location="city center main market">
+          <div class="thumb">🛏️</div>
+          <div class="body">
+            <h3>Deluxe Room - Sunshine Stay</h3>
+            <div class="meta">📍 Main Market, City Center</div>
+            <div class="rating">⭐ 4.8 (130 reviews)</div>
+            <div class="price">₹6,200 <span>/month</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="listing.html?cat=rooms&id=r6" data-price="3600" data-rating="4.2" data-location="campus road">
+          <div class="thumb">🛏️</div>
+          <div class="body">
+            <h3>Single Room - Campus View</h3>
+            <div class="meta">📍 Campus Road</div>
+            <div class="rating">⭐ 4.2 (33 reviews)</div>
+            <div class="price">₹3,600 <span>/month</span></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="foot-logo">Rent<span>Mate</span></div>
+        <p>RentMate is a student-built rental platform — rooms, hostels, hotels, bikes, cycles & cars at one place.</p>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="hostels.html">Hostels</a></li>
+          <li><a href="hotels.html">Hotels</a></li>
+          <li><a href="bikes.html">Bikes</a></li>
+          <li><a href="cycles.html">Cycles</a></li>
+          <li><a href="cars.html">Cars</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login / Sign up</a></li>
+          <li><a href="account.html">My Bookings</a></li>
+          <li><a href="wallet.html">RentMate Wallet</a></li>
+          <li><a href="help.html">Help Center</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="help.html">Contact / Support</a></li>
+          <li><a href="share.html">Share this site</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 RentMate</div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
